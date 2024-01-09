@@ -1,0 +1,10 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t yash1378/docker-react -f Dockerfile.dev .
+
+# Skip the "test" script
+script:
+  - echo "No tests configured"
